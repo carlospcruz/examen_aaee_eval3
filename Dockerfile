@@ -1,3 +1,3 @@
-FROM openjdk:17-jdk-slim
+FROM public.ecr.aws/amazoncorretto/amazoncorretto:17
 COPY target/*.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
